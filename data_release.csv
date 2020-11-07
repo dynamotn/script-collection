@@ -1,1 +1,2 @@
 repo,version,asset_file,output_file
+stedolan/jq,,jq-linux64,jq
