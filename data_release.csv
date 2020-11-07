@@ -1,2 +1,3 @@
 repo,version,asset_file,output_file
 stedolan/jq,,jq-linux64,jq
+docker/compose,,docker-compose-Linux-x86_64,docker-compose
