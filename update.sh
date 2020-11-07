@@ -28,7 +28,7 @@ _update_github_release() {
   # $3: File name in Github Release URLs
   # $4: Output file name of command
   test -z "$2" && version=$(curl -sSL https://api.github.com/repos/$1/releases/latest | grep -Po "tag_name\": \"(\K.*)(?=\",)") || version=$2
-  _update "https://github.com/$1/releases/download/$version/$3" "$4" true
+  _update "https://github.com/$1/releases/download/$version/$(eval "echo $3")" "$4" true
 }
 
 _run() {
