@@ -1,10 +1,18 @@
 #!/bin/bash
 BIN_DIR=$(dirname "$(readlink -f "$0")")
 
+_usage() {
+  echo "$0 usage:" && grep " .)\\ #" $0 | sed -e 's/\(.\)) #/-\1/g'
+  exit 0;
+}
+
 _update() {
   # $1: URL of file
   # $2: File name of command
   # $3: True/False for add command to gitignore
+  if [ "$NEW_ONLY" = true ] && [ -f $BIN_DIR/$2  ]; then
+    return
+  fi
   curl -SL $1 -o $BIN_DIR/$2 && chmod +x $BIN_DIR/$2
   if [ "$3" = true ]; then
     grep -r "$2" $BIN_DIR/.gitignore || echo "$2" >> .gitignore
@@ -56,5 +64,16 @@ _run() {
     wait $pid
   done
 }
+
+while getopts "hn" arg; do
+  case $arg in
+    n) # Update only new command
+      NEW_ONLY=true
+      ;;
+    h) # Display help
+      _usage
+      ;;
+  esac
+done
 
 _run
