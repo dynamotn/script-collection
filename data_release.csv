@@ -15,3 +15,4 @@ pemistahl/grex,,grex-$version-x86_64-unknown-linux-musl.tar.gz,grex,true
 dbrgn/tealdeer,,tldr-linux-x86_64-musl,tldr
 norwoodj/helm-docs,,helm-docs_${version:1}_Linux_x86_64.tar.gz,helm-docs,true
 gruntwork-io/terragrunt,,terragrunt_linux_amd64,terragrunt
+juliosueiras/terraform-lsp,, terraform-lsp_${version:1}_linux_amd64.tar.gz,terraform-lsp,true
