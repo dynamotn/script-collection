@@ -10,12 +10,19 @@ _update() {
   # $1: URL of file
   # $2: File name of command
   # $3: True/False for add command to gitignore
+  # $4: Flag check is install by external file
   if [ "$NEW_ONLY" = true ] && [ -f $BIN_DIR/$2  ]; then
     return
   fi
-  curl -SL $1 -o $BIN_DIR/$2 && chmod +x $BIN_DIR/$2
   if [ "$3" = true ]; then
-    grep -r "$2" $BIN_DIR/.gitignore || echo "$2" >> .gitignore
+    grep -r "$2" $BIN_DIR/.gitignore || echo "/$2" >> .gitignore
+  fi
+  if [ "$4" = true ]; then
+    local temp=$(mktemp)
+    curl -SL $1 -o $temp && source $BIN_DIR/external/$2 && chmod +x $BIN_DIR/$2
+    rm -rf $temp
+  else
+    curl -SL $1 -o $BIN_DIR/$2 && chmod +x $BIN_DIR/$2
   fi
 }
 
@@ -35,8 +42,9 @@ _update_github_release() {
   # $2: Version of Github Release
   # $3: File name in Github Release URLs
   # $4: Output file name of command
+  # $5: Flag check is install by external file
   test -z "$2" && version=$(curl -sSL https://api.github.com/repos/$1/releases/latest | grep -Po "tag_name\": \"(\K.*)(?=\",)") || version=$2
-  _update "https://github.com/$1/releases/download/$version/$(eval "echo $3")" "$4" true
+  _update "https://github.com/$1/releases/download/$version/$(eval "echo $3")" "$4" true "$5"
 }
 
 _run() {
@@ -53,10 +61,10 @@ _run() {
 
   # Update command by get release file
   is_first_file=true
-  while IFS=, read -r repo version asset_file file_name
+  while IFS=, read -r repo version asset_file file_name external_install
   do
     $is_first_file && is_first_file=false && continue
-    _update_github_release "$repo" "$version" "$asset_file" "$file_name" &
+    _update_github_release "$repo" "$version" "$asset_file" "$file_name" "$external_install" &
     pids+=" $!"
   done < $BIN_DIR/data_release.csv
 

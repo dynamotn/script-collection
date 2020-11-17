@@ -1,3 +1,4 @@
-jq
-docker-compose
-sops
+/jq
+/docker-compose
+/sops
+/k9s

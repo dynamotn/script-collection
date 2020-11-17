@@ -1,4 +1,5 @@
-repo,version,asset_file,output_file
+repo,version,asset_file,output_file,external_install
 stedolan/jq,,jq-linux64,jq
 docker/compose,,docker-compose-Linux-x86_64,docker-compose
 mozilla/sops,,sops-$version.linux,sops
+derailed/k9s,,k9s_linux_x86_64.tar.gz,k9s,true
