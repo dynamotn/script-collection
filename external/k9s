@@ -1,4 +1,3 @@
 #!/bin/bash
 
-cd $BIN_DIR
-tar xzf $temp k9s
+tar xzf $temp k9s -C $BIN_DIR

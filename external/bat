@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cd /tmp
-tar xzf $temp
+tar xzf $temp -C /tmp
 mv /tmp/bat-$version-x86_64-unknown-linux-gnu/bat $BIN_DIR/bat
 mkdir -p ~/.local/man/man1
 mv /tmp/bat-$version-x86_64-unknown-linux-gnu/bat.1 ~/.local/man/man1/bat.1

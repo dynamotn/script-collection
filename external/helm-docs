@@ -1,4 +1,3 @@
 #!/bin/bash
 
-cd $BIN_DIR
-tar xzf $temp helm-docs
+tar xzf $temp helm-docs -C $BIN_DIR

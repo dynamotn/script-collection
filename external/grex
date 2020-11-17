@@ -1,4 +1,3 @@
 #!/bin/bash
 
-cd $BIN_DIR
-tar xzf $temp grex
+tar xzf $temp grex -C $BIN_DIR

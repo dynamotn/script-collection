@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cd /tmp
-tar xzf $temp
+tar xzf $temp -C /tmp
 mv /tmp/hyperfine-$version-x86_64-unknown-linux-gnu/hyperfine $BIN_DIR/hyperfine
 mkdir -p ~/.local/man/man1
 mv /tmp/hyperfine-$version-x86_64-unknown-linux-gnu/hyperfine.1 ~/.local/man/man1/hyperfine.1

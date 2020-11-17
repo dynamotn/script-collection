@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cd /tmp
-tar xzf $temp
+tar xzf $temp -C /tmp
 mv /tmp/fd-$version-x86_64-unknown-linux-gnu/fd $BIN_DIR/fd
 mkdir -p ~/.local/man/man1
 mv /tmp/fd-$version-x86_64-unknown-linux-gnu/fd.1 ~/.local/man/man1/fd.1
