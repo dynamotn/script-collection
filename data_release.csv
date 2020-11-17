@@ -19,3 +19,4 @@ juliosueiras/terraform-lsp,, terraform-lsp_${version:1}_linux_amd64.tar.gz,terra
 rclone/rclone,,rclone-$version-linux-amd64.zip,rclone,true
 kubernetes/minikube,,minikube-linux-x86_64,minikube
 miguelmota/cointop,,cointop_1.5.5_linux_amd64.tar.gz,cointop,true
+tenox7/ttyplot,,ttyplot-amd64-linux,ttyplot
