@@ -1,6 +1,6 @@
 #!/bin/bash
 
 cd /tmp
-unzip -qq $temp
+unzip -qqo $temp
 mv exa-linux-x86_64 $BIN_DIR/exa
 curl -sSL https://raw.githubusercontent.com/ogham/exa/master/completions/completions.fish -o ~/.config/fish/dynamo/completions/exa.fish

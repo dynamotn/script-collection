@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd $BIN_DIR
-unzip -qq $temp
+unzip -qqo $temp
