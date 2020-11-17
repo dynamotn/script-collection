@@ -4,3 +4,4 @@ docker/compose,,docker-compose-Linux-x86_64,docker-compose
 mozilla/sops,,sops-$version.linux,sops
 derailed/k9s,,k9s_linux_x86_64.tar.gz,k9s,true
 sharkdp/fd,,fd-$version-x86_64-unknown-linux-gnu.tar.gz,fd,true
+sharkdp/hyperfine,,hyperfine-$version-x86_64-unknown-linux-gnu.tar.gz,hyperfine,true
