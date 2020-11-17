@@ -13,3 +13,4 @@ ClementTsang/bottom,,bottom_x86_64-unknown-linux-gnu.tar.gz,btm,true
 BurntSushi/ripgrep,,ripgrep-$version-x86_64-unknown-linux-musl.tar.gz,rg,true
 pemistahl/grex,,grex-$version-x86_64-unknown-linux-musl.tar.gz,grex,true
 dbrgn/tealdeer,,tldr-linux-x86_64-musl,tldr
+norwoodj/helm-docs,,helm-docs_${version:1}_Linux_x86_64.tar.gz,helm-docs,true
