@@ -8,3 +8,4 @@ sharkdp/hyperfine,,hyperfine-$version-x86_64-unknown-linux-gnu.tar.gz,hyperfine,
 sharkdp/bat,,bat-$version-x86_64-unknown-linux-gnu.tar.gz,bat,true
 XAMPPRocky/tokei,,tokei-x86_64-unknown-linux-gnu.tar.gz,tokei,true
 ogham/exa,,exa-linux-x86_64-${version:1}.zip,exa,true
+dalance/procs,,procs-$version-x86_64-lnx.zip,procs,true
