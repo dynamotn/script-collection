@@ -1,0 +1,4 @@
+#!/bin/bash
+
+unzip -qqoj $temp rclone-$version-linux-amd64/rclone -d $BIN_DIR
+unzip -qqoj $temp rclone-$version-linux-amd64/rclone.1 -d ~/.local/man/man1
