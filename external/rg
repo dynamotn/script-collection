@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /tmp
+tar xzf $temp
+mv /tmp/ripgrep-$version-x86_64-unknown-linux-musl/rg $BIN_DIR/rg
+mv /tmp/ripgrep-$version-x86_64-unknown-linux-musl/complete/rg.fish ~/.config/fish/dynamo/completions/rg.fish

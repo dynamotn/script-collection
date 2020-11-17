@@ -10,3 +10,4 @@ XAMPPRocky/tokei,,tokei-x86_64-unknown-linux-gnu.tar.gz,tokei,true
 ogham/exa,,exa-linux-x86_64-${version:1}.zip,exa,true
 dalance/procs,,procs-$version-x86_64-lnx.zip,procs,true
 ClementTsang/bottom,,bottom_x86_64-unknown-linux-gnu.tar.gz,btm,true
+BurntSushi/ripgrep,,ripgrep-$version-x86_64-unknown-linux-musl.tar.gz,rg,true
