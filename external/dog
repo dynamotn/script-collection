@@ -1,0 +1,5 @@
+#!/bin/bash
+
+unzip -qqoj $temp bin/dog -d $BIN_DIR
+unzip -qqoj $temp man/dog.1 -d ~/.local/man/man1
+unzip -qqoj $temp completions/dog.fish -d ~/.config/fish/dynamo/completions
