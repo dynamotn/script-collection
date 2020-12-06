@@ -1,0 +1,4 @@
+#!/bin/bash
+
+tar xvf $temp -C /tmp
+mv /tmp/hexyl-$version-x86_64-unknown-linux-gnu/hexyl $BIN_DIR/hexyl
