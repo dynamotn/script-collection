@@ -25,3 +25,4 @@ denisidoro/navi,,navi-v2.12.1-x86_64-unknown-linux-musl.tar.gz,navi,true
 ogham/dog,,dog-$version-x86_64-unknown-linux-gnu.zip,dog,true
 sharkdp/hexyl,,hexyl-$version-x86_64-unknown-linux-gnu.tar.gz,hexyl,true
 kevinschoon/pomo,,pomo-$version-linux-amd64,pomo,
+git-lfs/git-lfs,,git-lfs-linux-amd64-$version.tar.gz,git-lfs,true

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir -p /tmp/git-lfs
+tar xzf $temp -C /tmp/git-lfs
+mv /tmp/git-lfs/git-lfs $BIN_DIR/git-lfs
+mv /tmp/git-lfs/man/*.1 ~/.local/man/man1
