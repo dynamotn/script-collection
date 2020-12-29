@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tar xzf $temp vale -C $BIN_DIR
