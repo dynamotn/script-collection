@@ -1,0 +1,3 @@
+#!/bin/bash
+
+unzip -qqoj $temp bw -d $BIN_DIR

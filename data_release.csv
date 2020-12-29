@@ -28,3 +28,4 @@ kevinschoon/pomo,,pomo-$version-linux-amd64,pomo,
 git-lfs/git-lfs,,git-lfs-linux-amd64-$version.tar.gz,git-lfs,true
 ytdl-org/youtube-dl,,youtube-dl,youtube-dl
 errata-ai/vale,,vale_${version:1}_Linux_64-bit.tar.gz,vale,true
+bitwarden/cli,,bw-linux-${version:1}.zip,bw,true
