@@ -50,22 +50,14 @@ _update_github_release() {
 }
 
 _run() {
-  pids=""
-
   # Update command by view RAW of file
   tail -n +2 $BIN_DIR/data_raw.csv | grep -is ",$PACKAGE" | while IFS=, read -r repo branch git_path file_name; do
     _update_github_raw "$repo" "$branch" "$git_path" "$file_name"
-    pids+=" $!"
   done
 
   # Update command by get release file
   tail -n +2 $BIN_DIR/data_release.csv | grep -is ",$PACKAGE" | while IFS=, read -r repo version asset_file file_name external_install; do
     _update_github_release "$repo" "$version" "$asset_file" "$file_name" "$external_install"
-    pids+=" $!"
-  done
-
-  for pid in $pids; do
-    wait $pid
   done
 }
 
