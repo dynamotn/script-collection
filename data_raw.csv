@@ -1,8 +1,8 @@
 repo,branch,git_path,output_file
-heziode/emojify
-devkral/lightsonplus,,lightson+
+mrowa44/emojify,,,emojify
+devkral/lightsonplus,,lightson+,lightson+
 pipeseroni/pipes.sh,,pipes.sh,screensaver
-greymd/tmux-xpanes,,bin/xpanes
-dylanaraps/fff,,fff
-soimort/translate-shell,gh-pages,trans
+greymd/tmux-xpanes,,bin/xpanes,xpanes
+dylanaraps/fff,,fff,fff
+soimort/translate-shell,gh-pages,trans,trans
 apankrat/now.sh,,,now
