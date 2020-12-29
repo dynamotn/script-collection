@@ -1,5 +1,4 @@
 repo,branch,git_path,output_file
-so-fancy/diff-so-fancy,,third_party/build_fatpack/diff-so-fancy
 heziode/emojify
 devkral/lightsonplus,,lightson+
 pipeseroni/pipes.sh,,pipes.sh,screensaver

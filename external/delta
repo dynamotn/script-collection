@@ -1,0 +1,4 @@
+#!/bin/bash
+
+tar xzf $temp -C /tmp
+mv /tmp/delta-$version-x86_64-unknown-linux-gnu/delta $BIN_DIR
