@@ -21,7 +21,7 @@ kubernetes/minikube,,minikube-linux-x86_64,minikube
 miguelmota/cointop,,cointop_1.5.5_linux_amd64.tar.gz,cointop,true
 tenox7/ttyplot,,ttyplot-amd64-linux,ttyplot
 mikefarah/yq,,yq_linux_amd64,yq
-denisidoro/navi,,navi-v2.12.1-x86_64-unknown-linux-musl.tar.gz,navi,true
+denisidoro/navi,,navi-$version-x86_64-unknown-linux-musl.tar.gz,navi,true
 ogham/dog,,dog-$version-x86_64-unknown-linux-gnu.zip,dog,true
 sharkdp/hexyl,,hexyl-$version-x86_64-unknown-linux-gnu.tar.gz,hexyl,true
 kevinschoon/pomo,,pomo-$version-linux-amd64,pomo,
