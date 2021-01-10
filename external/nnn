@@ -1,0 +1,4 @@
+#!/bin/bash
+
+tar xzf $temp -C /tmp
+mv /tmp/nnn-nerd-static $BIN_DIR/nnn

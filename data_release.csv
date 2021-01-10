@@ -30,3 +30,4 @@ ytdl-org/youtube-dl,,youtube-dl,youtube-dl
 errata-ai/vale,,vale_${version:1}_Linux_64-bit.tar.gz,vale,true
 bitwarden/cli,,bw-linux-${version:1}.zip,bw,true
 dandavison/delta,,delta-${version}-x86_64-unknown-linux-gnu.tar.gz,delta,true
+jarun/nnn,,nnn-nerd-static-${version:1}.x86_64.tar.gz,nnn,true
