@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir -p /tmp/glab
+trap "rm -rf /tmp/glab" EXIT
+tar xzf $temp -C /tmp/glab
+mv /tmp/glab/bin/glab $BIN_DIR
