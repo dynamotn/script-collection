@@ -32,3 +32,4 @@ bitwarden/cli,,bw-linux-${version:1}.zip,bw,true
 dandavison/delta,,delta-${version}-x86_64-unknown-linux-gnu.tar.gz,delta,true
 jarun/nnn,,nnn-nerd-static-${version:1}.x86_64.tar.gz,nnn,true
 atanunq/viu,,viu,viu
+cli/cli,,gh_${version:1}_linux_amd64.tar.gz,gh,true

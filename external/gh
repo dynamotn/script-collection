@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tar xzf $temp -C /tmp
+mv /tmp/gh_${version:1}_linux_amd64/bin/gh $BIN_DIR/gh
+mkdir -p ~/.local/man/man1
+mv /tmp/gh_${version:1}_linux_amd64/share/man/man1/*.1 ~/.local/man/man1
