@@ -35,3 +35,4 @@ atanunq/viu,,viu,viu
 cli/cli,,gh_${version:1}_linux_amd64.tar.gz,gh,true
 profclems/glab,,glab_${version:1}_Linux_x86_64.tar.gz,glab,true
 terraform-docs/terraform-docs,,terraform-docs-$version-linux-amd64,terraform-docs
+koalaman/shellcheck,,shellcheck-$version.linux.x86_64.tar.xz,shellcheck,true

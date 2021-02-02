@@ -1,0 +1,3 @@
+#!/bin/bash
+
+tar xf $temp shellcheck-$version/shellcheck --strip=1 -C $BIN_DIR
